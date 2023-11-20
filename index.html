@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/images/clock-icon.svg">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="pomodoro-container">
+                <div class="button-navigation-area">
+                    <button data-pomodoro class="navigation-selected">Pomodoro</button>
+                    <button data-interval>Intervalo</button>
+                </div>
+                <div class="time-area">
+                    <h1 data-time="minutes"></h1>
+                    <h1 data-time="seconds"></h1>
+                </div>
+                <div class="button-area">
+                    <button data-start>Começar</button>
+                    <button data-pause class="disable-button">Pausar</button>
+                    <button data-unpause class="disable-button">Despausar</button>
+                </div>
+            </div>
+            <div class="count-area">
+                <h3 data-count-text>Pomodoro(s): 0</h3>
+                <!-- <h3 data-count-area>Descanso(s): 0</h3> -->
+            </div>
+            <div data-task-container class="task-container">
+                <div>
+                    <h1>Tarefas</h1>
+                    <div class="divider-line"></div>
+                </div>
+                <div data-add-task-area class="add-task-area">
+                    <input data-task-name placeholder="Nome da tarefa" />
+                    <p data-message-task-error>Insira o nome da tarefa!</p>
+                    <div class="task-option-area">
+                        <button data-save-task-button>Salvar</button>
+                        <button data-cancel-task-button>Cancelar</button>
+                    </div>
+                </div>
+                <button class="add-task-button" data-add-task-button>Adicionar tarefa</button>
+            </div>
+        </div>
+    </main>
+    <script src="src/scripts/script.js"></script>
+    <script src="src/scripts/tasks.js"></script>
+</body>
+</html>

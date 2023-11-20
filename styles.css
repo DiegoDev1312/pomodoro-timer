@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Resetando estilizações do botão */
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* Áreas padrões */
+body {
+    background-color: #0bad67;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.container {
+    max-width: 300px;
+}
+
+.pomodoro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #FFF;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* Área de botões da navegação start-break */
+.button-navigation-area {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+.button-navigation-area button {
+    height: 40px;
+    width: 100px;
+    border: 2px solid #FFF;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.navigation-selected {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Área do tempo */
+.time-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-area h1 {
+    color: #FFF;
+    font-size: 4rem;
+}
+
+/* Botão de opções pause-init */
+.button-area {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.button-area button {
+    height: 40px;
+    width: 100px;
+    border: 2px solid #FFF;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.disable-button {
+    display: none;
+}
+
+.active-button {
+    display: block;
+}
+
+/* Área das contagens de pomodoro/intervalos */
+.count-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.count-area h3 {
+    color: #FFF;
+}
+
+/* Área de tarefas */
+.task-container {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.task-container h1 {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.divider-line {
+    background-color: #FFF;
+    height: 1px;
+    width: 100%;
+}
+
+.task-area {
+    background-color: #FFF;
+    min-height: 40px;
+    width: 100%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: 0.5s;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.description-task-text {
+    max-width: 85%;
+}
+
+.hide-item {
+    opacity: 0;
+}
+
+.show-item {
+    opacity: 1;
+}
+
+.task-checked {
+    color: #0c804e;
+    border: 2px solid #0c804e;
+}
+
+.task-unchecked {
+    color: #ca2424;
+    border: 2px solid #ca2424;
+}
+
+.task-area img {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.action-icon-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.add-task-area {
+    display: none;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 12px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.add-task-area input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.add-task-area p {
+    display: none;
+    font-size: 0.9rem;
+    color: #ca2424;
+}
+
+.task-option-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.task-option-area button {
+    height: 30px;
+    font-weight: bold;
+    padding: 0px 12px;
+    border-radius: 6px;
+}
+
+.task-option-area button:nth-child(1) {
+    color: #FFF;
+    background-color: #2dd28b;
+}
+
+.task-option-area button:nth-child(2) {
+    background-color: #ca2424;
+}
+
+.add-task-button{
+    width: 150px;
+    height: 40px;
+    border: 2px solid #FFF;
+    border-radius: 6px;
+    align-self: center;
+}
