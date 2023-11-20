@@ -64,7 +64,6 @@ function updateCountCicles(type, value) {
 
 // irá atualizar o tempo de acordo com os parâmetros passados
 function updateTime(minutes, seconds, titleName) {
-    console.log(minutes, seconds, titleName)
     timerText[0].textContent = `${editTimeNumber(minutes)}:`;
     timerText[1].textContent = editTimeNumber(seconds);
     document.title = `${titleName}: ${editTimeNumber(minutes)}:${editTimeNumber(seconds)}`;
